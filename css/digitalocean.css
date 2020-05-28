@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6, .btn {
   font-weight: 700;
 }
 
+ul {
+  list-style-type: none;
+}
+
 .row {
   height: 100%;
 }
@@ -41,13 +45,19 @@ h1, h2, h3, h4, h5, h6, .btn {
   border-bottom: solid 1px rgba(124, 144, 204, 0.5);
 }
 
+#prima .navbar {
+  margin-bottom: 0;
+}
+
 #prima .navbar-default {
   background-color: #fff;
   border-color: #fff;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 #prima .navbar-brand {
+
+  height: 55px;
   margin-right: 50px;
 }
 
@@ -77,47 +87,52 @@ h1, h2, h3, h4, h5, h6, .btn {
 main section {
   padding: 60px 0;
 }
+
+main h2, h3, h4, h5, h6 {
+  color: #031b4e;
+}
+main p {
+  color: #5b6987;
+}
  /* blocco titolo (seconda riga) */
 
- #seconda {
-   background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
-   background-size: cover;
-   background-position: 70% 50%;
-   padding-top: 130px;
+#seconda {
+  background-image: url(https://www.digitalocean.com/static/bg-home-hero-3-bb4b33b77274db09b969f629ad81c4d5.svg);
+  background-size: cover;
+  background-position: 70% 50%;
+  padding: 150px 0 80px;
  }
 
- #seconda .blocco-titolo {
-   color: #fff;
- }
- #seconda .blocco-titolo h1 {
-   font-size: 60px;
-   margin-bottom: 30px;
+#seconda .blocco-titolo h1 {
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: #fff;
  }
 
- #seconda .blocco-titolo p {
-   font-size: 24px;
-   line-height: 150%;
- }
+#seconda .blocco-titolo p {
+  font-size: 24px;
+  line-height: 150%;
+  color: #fff;
+}
 
- #seconda .registrazione {
-   padding: 5%;
-   border-radius: 5px;
-   background-color: #fff;
- }
+#seconda .registrazione {
+  padding: 5%;
+  border-radius: 5px;
+  background-color: #fff;
+}
 
- #seconda .registrazione h3 {
-   font-size: 30px;
-   color: #006aff;
-   text-align: center;
- }
+#seconda .registrazione h3{
+  text-align: center;
+}
 
- #seconda .registrazione h3:first-child {
-   color: #031b4e;
- }
+#seconda .registrazione h3:nth-last-child(2) {
+  font-size: 30px;
+  color: #006aff;
+}
 
- #seconda .form-control {
-   font-size: 20px;
- }
+#seconda .form-control {
+  font-size: 20px;
+}
 
 #seconda .btn {
   width: 100%;
@@ -156,11 +171,75 @@ main section {
 
 #terza {
   background-color: #f3f5f9;
+  padding: 30px 0;
+}
+
+#terza h5 {
+  color: #5b6987;
 }
 
 #terza  img {
   max-width: 100%;
   height: 150px;
+}
+
+#terza a {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* blocco deploy (quarta riga) */
+
+#quarta .deploy h2 {
+  font-size: 36px;
+}
+
+#quarta .deploy p {
+  font-size: 20px;
+  line-height: 150%;
+}
+
+#quarta .deploy ul {
+  border-left: solid 1px rgba(3, 27, 78, 0.6);
+  margin-top: 80px;
+}
+
+#quarta .deploy li {
+  padding: 15px 20px;
+}
+
+#quarta .deploy li:first-child {
+  border-left: solid 1px rgba(3, 27, 78, 1);
+}
+
+#quarta .deploy li:first-child a {
+  color: rgba(3, 27, 78, 1);
+}
+
+#quarta .deploy a {
+  color: rgba(3, 27, 78, 0.6);
+  font-size: 20px;
+}
+
+#quarta .deploy li:hover {
+  cursor: pointer;
+}
+
+#quarta .deploy a:hover {
+  text-decoration: none;
+}
+
+#quarta .deploy-1 {
+  margin-top: 80px;
+}
+
+#quarta .deploy-1 img {
+  margin-bottom: 15px;
+}
+
+#quarta .deploy-1 h5, p {
+  font-size: 16px;
+  margin-bottom: 25px;
 }
 
 /* VERSIONE SM */
