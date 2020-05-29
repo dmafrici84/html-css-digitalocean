@@ -397,6 +397,37 @@ main p {
 
 #decima {
   background-color: hsl(220,95%,8%);
+  padding: 60px 0;
+  color: hsla(0,0%,100%,0.5);
+}
+
+#decima .logo-mark li {
+  display: inline-block;
+  margin-right: 5%;
+}
+
+#decima .logo-mark img {
+  color: hsla(0,0%,100%,0.5);
+}
+
+#decima li {
+  line-height: 2;
+}
+
+#decima a {
+  font-size: 16px;
+  color: hsla(0,0%,100%,0.5);
+}
+
+#decima a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+#decima h6 {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 
