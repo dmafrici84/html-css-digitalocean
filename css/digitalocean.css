@@ -56,13 +56,10 @@ ul {
 }
 
 #prima .navbar-brand {
-
   height: 55px;
-  margin-right: 50px;
 }
 
 #prima .navbar-brand > img {
-  width: 100%;
   height: 100%;
 }
 
@@ -91,6 +88,11 @@ main section {
 main h2, h3, h4, h5, h6 {
   color: #031b4e;
 }
+
+main h2 {
+  text-align: center;
+}
+
 main p {
   color: #5b6987;
 }
@@ -183,11 +185,15 @@ main p {
   height: 150px;
 }
 
-#terza a {
+.collegamento {
   font-size: 15px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
+.collegamento:hover {
+  text-decoration: none;
+  color: #006aff;
+}
 /* blocco deploy (quarta riga) */
 
 #quarta .deploy h2 {
@@ -223,10 +229,15 @@ main p {
 
 #quarta .deploy li:hover {
   cursor: pointer;
+  border-left: solid 1px rgba(3, 27, 78, 1);
 }
 
 #quarta .deploy a:hover {
   text-decoration: none;
+}
+
+#quarta .deploy li:hover a {
+  color: rgba(3, 27, 78, 1);
 }
 
 #quarta .deploy-1 {
@@ -242,38 +253,135 @@ main p {
   margin-bottom: 25px;
 }
 
+ /* designed  (quinta riga) */
+
+#quinta, #ottava {
+  background-color: #f3f5f9;
+}
+
+#quinta .designed {
+  margin-bottom: 60px;
+}
+
+#quinta .quinta-central img {
+  width: 100%;
+  max-height: 500px;
+}
+
+#quinta .quinta-left, .quinta-right {
+  position:relative;
+  width: 100%;
+  font-size: 30px;
+}
+
+#quinta .quinta-left i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+#quinta .quinta-right i {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+#quinta i:hover {
+  cursor: pointer;
+}
+
+#quinta .col-xs-1 {
+  display: none;
+}
+
+#quinta li {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: solid 1px #006aff;
+  margin-top: 20px;
+}
+
+#quinta li:first-child {
+  background-color: #006aff;
+}
+
+#quinta li:hover {
+  cursor: pointer;
+  background-color: #006aff;
+}
+
+/* blocco the features(sesta riga) */
+
+#sesta .features {
+  padding-top: 40px;
+}
+
+#sesta img {
+  margin: 10px 0;
+}
+
+#sesta h5 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+#sesta p {
+  line-height: 150%;
+}
+
+/* blocco Services (settima riga) */
+
+#settima {
+  background: #031b4e url(https://images.prismic.io/www-static/bb563ec9-49ef-4ceb-8468-da84f1509fcc_bg-map-solid.svg?auto=compress,format);
+  color: #fff;
+}
+
+
 /* VERSIONE SM */
 
 @media all and (min-width: 768px) {
 
-   /* blocco titolo (seconda riga) */
+  /* blocco titolo (seconda riga) */
 
-   #seconda .blocco-titolo h1 {
-     font-size: 40px;
-   }
+  #seconda .blocco-titolo h1 {
+   font-size: 40px;
+  }
 
-   #seconda .blocco-titolo p {
-     font-size: 20px;
-   }
+  #seconda .blocco-titolo p {
+    font-size: 20px;
+  }
 
-   #seconda .registrazione h3 {
-     font-size: 30px;
-   }
+  #seconda .registrazione h3 {
+    font-size: 30px;
+  }
 
-   #seconda .form-control {
-     font-size: 20px;
-   }
+  #seconda .form-control {
+    font-size: 20px;
+  }
 
   #seconda .btn {
     font-size: 16px;
   }
 
-  /* blocco businesses (terza riga) */
+  /* designed  (quinta riga) */
+
+  #quinta .col-sm-2 {
+    display: block;
+  }
+
+  #quinta .quinta-left, .quinta-right {
+    height: 318.5px;
+  }
+
 
 
 }
 
-/* VERSIONE MD *//* VERSIONE LG */
+/* VERSIONE MD */
 
 @media all and (min-width: 992px) {
 
@@ -299,7 +407,39 @@ main p {
     font-size: 16px;
   }
 
-  /* blocco businesses (terza riga) */
+  /* designed  (quinta riga) */
+
+  #quinta .quinta-left, .quinta-right {
+    height: 413.83px;
+  }
+
+  /* blocco the features(sesta riga) */
+
+  #sesta .features {
+    padding: 40px 15% 0;
+  }
+
+
+
+
+
+
+}
+  /* VERSIONE LG */
+
+  @media all and (min-width: 1200px) {
+
+
+  #prima .navbar-brand {
+    margin-right: 50px;
+  }
+
+  /* designed  (quinta riga) */
+
+  #quinta .quinta-left, .quinta-right {
+    height: 500px;
+  }
+
 
 
 }
